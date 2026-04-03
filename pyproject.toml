@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "tabpfn-robust-ensemble-Dong"
+version = "0.1.0"
+description = "Lightweight TabPFN ensemble with variance tracking and IQR-weighted prediction"
+dependencies = ["numpy", "pandas"]
+
+[project.optional-dependencies]
+local = ["tabpfn"]
+client = ["tabpfn-client"]
